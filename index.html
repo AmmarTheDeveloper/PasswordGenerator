@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Password Generator</h1>
+        <div class="password">
+            <input type="text" class="password-input" disabled>
+            <i class="fa-regular fa-copy copy"></i>
+            <div class="copied">Copied</div>
+        </div>
+        <div class="passStrength">
+            <div></div>
+        </div>
+        <div class="range">
+            <h1 class="subheading">Password Length
+                <div class="length">15</div>
+            </h1>
+            <input type="range" min="1" max="30" vale="15">
+        </div>
+        <div class="setting">
+            <h1 class="subheading">Password Setting</h1>
+            <div class="check">
+                <div class="lowercase">
+                    <input type="checkbox" checked id="lowercase">
+                    <label for="lowercase">Lowercase(a-z)</label>
+                </div><div class="uppercase">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Uppercase(A-Z)</label>
+                </div><div class="numbers">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Numbers(0-9)</label>
+                </div><div class="symbols">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Symbols(!-$-^+)</label>
+                </div>
+            </div>
+        </div>
+            <div class="btn">
+                <button type="button">Generat Password</button>
+            </div>
+    </div>
+    <footer>
+        Created And Developed By <a href="">ammar</a> || Copyright &copy; 2022
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
